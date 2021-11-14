@@ -11,7 +11,7 @@
         document.getElementById('messageOne').textContent = 'Loading'
         //document.getElementById('messageTwo').textContent = ''
 
-        url = `http://localhost:3000/weather?address=${searchValue}`
+        url = `/weather?address=${searchValue}`
         fetch(url).then((response) => {
             //console.log(response)
             response.json().then((data)=>{
