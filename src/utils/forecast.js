@@ -11,8 +11,10 @@ const forecast = (long, lat, callback) => {
             callback('Try another search',undefined)
         }
         else {
-            callback(undefined, 'The weather condition is ' + response.body.current.weatherdescriptions[0] + 'The temparature is '+ response.body.current.temperature + 'It feesl like '+ response.body.current.feelsLike)
+            callback(undefined, 'The temparature is '+ response.body.current.temperature + 'It feesl like '+ response.body.current.feelsLike)
+            //console.log('The weather condition is ' + response.body.current.weatherdescriptions[0] + 'The temparature is '+ response.body.current.temperature + 'It feesl like '+ response.body.current.feelsLike)
         }
+
 
     })
 }
